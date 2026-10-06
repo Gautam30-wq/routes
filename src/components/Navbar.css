@@ -1,0 +1,58 @@
+/* src/components/Navbar.css */
+.navbar-container {
+    width: 100%;
+    background-color: var(--bg-card);
+    border-bottom: 1px solid var(--border-color);
+    padding-top: 12px;
+    box-sizing: border-box;
+}
+
+.tab-group {
+    display: flex;
+    gap: 8px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.tab {
+    text-decoration: none;
+    color: var(--text-muted);
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-bottom: none;
+    border-radius: var(--radius) var(--radius) 0 0;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    background: none;
+}
+
+.tab:hover {
+    color: var(--text-main);
+    background-color: var(--bg-primary);
+}
+
+.tab.active {
+    color: var(--accent);
+    background-color: var(--bg-primary);
+    border-color: var(--border-color);
+    border-bottom: 2px solid var(--bg-primary);
+    margin-bottom: -1px;
+    position: relative;
+    z-index: 2;
+}
+
+.logout-btn {
+    margin-left: auto;
+    border: 1px solid #dc3545;
+    color: #dc3545;
+    border-radius: 4px;
+    padding: 6px 14px;
+    align-self: center;
+}
+
+.logout-btn:hover {
+    background-color: #dc3545;
+    color: #fff;
+}
